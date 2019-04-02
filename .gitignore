@@ -3,3 +3,12 @@
 ################################################################################
 
 /.vs
+/GiphyPropertyEditor.Web/App_Data/cache
+/GiphyPropertyEditor.Web/App_Data/Logs
+/GiphyPropertyEditor.Web/App_Data/Models
+/GiphyPropertyEditor.Web/App_Data/packages
+/GiphyPropertyEditor.Web/App_Data/TEMP
+/GiphyPropertyEditor.Web/bin
+/GiphyPropertyEditor.Web/obj/Debug
+/GiphyPropertyEditor.Web/Umbraco
+/packages
