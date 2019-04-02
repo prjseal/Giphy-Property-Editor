@@ -12,3 +12,6 @@
 /GiphyPropertyEditor.Web/obj/Debug
 /GiphyPropertyEditor.Web/Umbraco
 /packages
+/GiphyPropertyEditor/obj/Debug
+/GiphyPropertyEditor/bin/Debug
+/GiphyPropertyEditor.Web/App_Plugins/GiphyPropertyEditor

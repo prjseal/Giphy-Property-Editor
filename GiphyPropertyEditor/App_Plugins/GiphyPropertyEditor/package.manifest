@@ -1,0 +1,24 @@
+﻿{
+	// you can define multiple editors
+	propertyEditors: [
+		{
+			/*this must be a unique alias*/
+			alias: "GiphyPropertyEditor",
+			/*the name*/
+			name: "Giphy Property Editor",
+			/*the icon*/
+			icon: "icon-smiley-inverted",
+			/*grouping for "Select editor" dialog*/
+			group: "media",
+			/*the HTML file we will load for the editor*/
+			editor: {
+				view: "~/App_Plugins/GiphyPropertyEditor/GiphyPropertyEditor.html"
+			}
+		}
+	]
+	,
+	// array of files we want to inject into the application on app_start
+	javascript: [
+		'~/App_Plugins/GiphyPropertyEditor/js/GiphyPropertyEditor.controller.js'
+	]
+}
