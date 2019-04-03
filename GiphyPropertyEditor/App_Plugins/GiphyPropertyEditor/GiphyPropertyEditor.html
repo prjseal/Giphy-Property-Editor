@@ -1,11 +1,22 @@
-﻿<div ng-controller="giphyPropertyEditorController">
+﻿<div ng-controller="giphyPropertyEditorController" class="giphyPropertyEditor">
     <ng-form name="textboxFieldForm">
-        <input type="text" name="textbox" ng-model="model.search" 
-               class="umb-property-editor umb-textstring textstring"
-               ng-required="model.validation.mandatory"
-               ng-trim="false" />
-        
-        <img ng-src="{{model.value}}" ng-model="model.value" ng-click="model.change()" />
+        <div ng-if="model.value == null || model.value == ''" class="search-bar">
+            <input type="text" name="textbox" ng-model="model.search" autocomplete="off"
+                   class="umb-property-editor umb-textstring textstring"
+                   ng-required="model.validation.mandatory"
+                   ng-trim="false" ng-model-options="{ debounce: 500 }" ng-change="model.change()" />
+        </div>
+
+        <div class="preview-area" ng-if="model.value != null && model.value != ''">
+            <img class="giphy-preview" ng-src="{{model.value}}" ng-model="model.value" />
+            <a class="umb-sortable-thumbnails__action -red" href="" ng-click="model.remove()">
+                <i class="icon icon-delete"></i>
+            </a>
+        </div>
+
+        <div class="results">
+            <img ng-repeat="result in model.results" ng-src="{{result.images.fixed_height_small.url}}" data-fullurl="{{result.images.original.url}}" ng-click="model.click(result)" />
+        </div>
 
         <span ng-messages="textboxFieldForm.textbox.$error" show-validation-on-submit>
             <span class="help-inline" ng-message="valServer">{{textboxFieldForm.textbox.errorMsg}}</span>

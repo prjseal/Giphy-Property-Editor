@@ -19,6 +19,9 @@
 	,
 	// array of files we want to inject into the application on app_start
 	javascript: [
-		'~/App_Plugins/GiphyPropertyEditor/js/GiphyPropertyEditor.controller.js'
-	]
+		'~/App_Plugins/GiphyPropertyEditor/js/controller.js'
+	],
+  css: [
+    '~/App_Plugins/GiphyPropertyEditor/css/styles.css'
+  ]
 }
