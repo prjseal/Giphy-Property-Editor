@@ -48,8 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\GiphyPropertyEditor\css\styles.css" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\giphypicker.html" />
     <Content Include="App_Plugins\GiphyPropertyEditor\GiphyPropertyEditor.html" />
-    <Content Include="App_Plugins\GiphyPropertyEditor\js\controller.js" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\js\picker.controller.js" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\js\propertyeditor.controller.js" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

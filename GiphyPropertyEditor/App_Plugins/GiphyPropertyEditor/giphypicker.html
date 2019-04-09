@@ -1,0 +1,42 @@
+﻿<div ng-controller="giphyPickerEditorController as vm">
+    <umb-editor-view>
+
+        <umb-editor-header name="model.title"
+                           name-locked="true"
+                           hide-alias="true"
+                           hide-icon="true"
+                           hide-description="true">
+        </umb-editor-header>
+
+        <umb-editor-container>
+
+            <div class="form-search">
+                <i class="icon-search"></i>
+                <input type="text" id="giphy-search" ng-model="model.search" autocomplete="off"
+                       class="umb-property-editor umb-textstring textstring"
+                       ng-required="model.validation.mandatory"
+                       placeholder="Type to search for a gif..."
+                       ng-trim="false" ng-model-options="{ debounce: 500 }" ng-change="search()" />
+            </div>
+
+            <div class="results">
+                <img ng-repeat="result in model.results" ng-src="{{result.images.fixed_height_small.url}}" data-fullurl="{{result.images.original.url}}" ng-click="submit(result)" />
+            </div>
+
+        </umb-editor-container>
+
+        <umb-editor-footer>
+            <umb-editor-footer-content-right>
+
+                <umb-button action="close()"
+                            button-style="link"
+                            shortcut="esc"
+                            label-key="general_close"
+                            type="button">
+                </umb-button>
+            </umb-editor-footer-content-right>
+        </umb-editor-footer>
+
+    </umb-editor-view>
+
+</div>

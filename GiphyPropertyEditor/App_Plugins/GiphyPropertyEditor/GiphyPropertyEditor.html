@@ -1,31 +1,25 @@
-﻿<div ng-controller="giphyPropertyEditorController" class="giphyPropertyEditor">
-    <ng-form name="textboxFieldForm">
-        <div ng-if="model.value == null || model.value == ''" class="search-bar">
-            <input type="text" name="textbox" ng-model="model.search" autocomplete="off"
-                   class="umb-property-editor umb-textstring textstring"
-                   ng-required="model.validation.mandatory"
-                   ng-trim="false" ng-model-options="{ debounce: 500 }" ng-change="model.change()" />
-        </div>
+﻿<div ng-controller="giphyPropertyEditorController" class="giphyPropertyEditor umb-property-editor umb-mediapicker umb-mediapicker-single">
 
-        <div class="preview-area" ng-if="model.value != null && model.value != ''">
-            <img class="giphy-preview" ng-src="{{model.value}}" ng-model="model.value" />
-            <a class="umb-sortable-thumbnails__action -red" href="" ng-click="model.remove()">
-                <i class="icon icon-delete"></i>
-            </a>
-        </div>
+    <div data-element="sortable-thumbnails" class="flex flex-wrap error" ng-if="model.value">
+        <ul class="umb-sortable-thumbnails">
+            <li class="umb-sortable-thumbnails__wrapper">
+                <img ng-src="{{model.value}}" alt="">
+                <div class="umb-sortable-thumbnails__actions">
+                    <a class="umb-sortable-thumbnails__action -red" href="" ng-click="remove()">
+                        <i class="icon icon-delete"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-        <div class="results">
-            <img ng-repeat="result in model.results" ng-src="{{result.images.fixed_height_small.url}}" data-fullurl="{{result.images.original.url}}" ng-click="model.click(result)" />
-        </div>
-
-        <span ng-messages="textboxFieldForm.textbox.$error" show-validation-on-submit>
-            <span class="help-inline" ng-message="valServer">{{textboxFieldForm.textbox.errorMsg}}</span>
-            <span class="help-inline" ng-message="required"><localize key="general_required">Required</localize></span>
-        </span>
-
-        <div class="help" ng-if="model.maxlength">
-            <strong>{{model.count}}</strong>
-            <localize key="textbox_characters_left">characters left</localize>
-        </div>
-    </ng-form>
+    <div data-element="sortable-thumbnails" class="flex flex-wrap error" ng-hide="model.value">
+        <ul ui-sortable="sortableOptions" class="umb-sortable-thumbnails ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty">
+            <li style="border: none;" class="add-wrapper unsortable ng-scope">
+                <a href="#" class="add-link add-link-square" ng-click="add()" prevent-default>
+                    <i class="icon icon-add large"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
