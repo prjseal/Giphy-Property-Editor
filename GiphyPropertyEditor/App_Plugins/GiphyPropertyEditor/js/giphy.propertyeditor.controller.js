@@ -4,7 +4,7 @@
         var giphyPicker = {
             apikey: $scope.model.config.apikey,
             title: "Giphy Property Editor",
-            view: "/App_Plugins/GiphyPropertyEditor/giphypicker.html",
+            view: "/App_Plugins/GiphyPropertyEditor/giphy.picker.html",
             size: "small",
             submit: function (model) {
                 $scope.model.value = model.images.original.url;
@@ -21,4 +21,4 @@
         $scope.model.value = null;
     };
 }
-angular.module('umbraco').controller("giphyPropertyEditorController", giphyPropertyEditorController);
+angular.module('umbraco').controller("Giphy.PropertyEditor.Controller", giphyPropertyEditorController);

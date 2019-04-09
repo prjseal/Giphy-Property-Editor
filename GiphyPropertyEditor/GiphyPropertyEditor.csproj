@@ -47,11 +47,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Plugins\GiphyPropertyEditor\css\styles.css" />
-    <Content Include="App_Plugins\GiphyPropertyEditor\giphypicker.html" />
-    <Content Include="App_Plugins\GiphyPropertyEditor\GiphyPropertyEditor.html" />
-    <Content Include="App_Plugins\GiphyPropertyEditor\js\picker.controller.js" />
-    <Content Include="App_Plugins\GiphyPropertyEditor\js\propertyeditor.controller.js" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\css\giphy.styles.css" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\giphy.picker.html" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\giphy.propertyeditor.html" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\js\giphy.picker.controller.js" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\js\giphy.propertyeditor.controller.js" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

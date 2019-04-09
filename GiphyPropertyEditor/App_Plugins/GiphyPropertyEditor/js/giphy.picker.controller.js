@@ -1,4 +1,4 @@
-﻿function giphyPickerEditorController($scope, $http) {
+﻿function giphyPickerController($scope, $http) {
 
     $scope.submit = function (result) {
         if ($scope.model.submit) {
@@ -29,4 +29,4 @@
         });
     };
 }
-angular.module('umbraco').controller("giphyPickerEditorController", giphyPickerEditorController);
+angular.module('umbraco').controller("Giphy.Picker.Controller", giphyPickerController);

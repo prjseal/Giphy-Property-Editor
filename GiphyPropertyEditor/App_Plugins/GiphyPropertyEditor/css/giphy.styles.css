@@ -1,14 +1,18 @@
-﻿div.giphyPropertyEditor div.results {
+﻿div.giphyPropertyEditor ul li {
+    cursor: pointer;
+}
+
+div.giphy-picker div.results {
     margin-top: 10px;
 }
 
-div.giphyPropertyEditor div.results img {
+div.giphy-picker div.results img {
     margin: 0px 10px 10px 0px;
     float: left;
     cursor: pointer;
 }
 
-div.giphyPropertyEditor div.results img:hover {
+div.giphy-picker div.results img:hover {
     -webkit-box-shadow:0 0 2px 4px #f5c1bc;
     box-shadow:0 0 2px 4px #f5c1bc;
 }

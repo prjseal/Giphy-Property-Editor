@@ -1,8 +1,8 @@
-﻿<div ng-controller="giphyPropertyEditorController" class="giphyPropertyEditor umb-property-editor umb-mediapicker umb-mediapicker-single">
+﻿<div ng-controller="Giphy.PropertyEditor.Controller" class="giphyPropertyEditor umb-property-editor umb-mediapicker umb-mediapicker-single">
 
     <div data-element="sortable-thumbnails" class="flex flex-wrap error" ng-if="model.value">
         <ul class="umb-sortable-thumbnails">
-            <li class="umb-sortable-thumbnails__wrapper">
+            <li class="umb-sortable-thumbnails__wrapper" ng-click="add()">
                 <img ng-src="{{model.value}}" alt="">
                 <div class="umb-sortable-thumbnails__actions">
                     <a class="umb-sortable-thumbnails__action -red" href="" ng-click="remove()">
