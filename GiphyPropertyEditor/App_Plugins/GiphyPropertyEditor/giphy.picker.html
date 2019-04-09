@@ -20,12 +20,15 @@
             </div>
 
             <div class="results">
-                <img ng-repeat="result in model.results" ng-src="{{result.images.fixed_height_small.url}}" data-fullurl="{{result.images.original.url}}" ng-click="submit(result)" />
+                <img class="animate-show" fade-in ng-repeat="result in model.results" ng-src="{{result.images.fixed_height_small.url}}" data-fullurl="{{result.images.original.url}}" ng-click="submit(result)" />
             </div>
 
         </umb-editor-container>
 
         <umb-editor-footer>
+            <umb-editor-footer-content-left>
+                <img src="/App_Plugins/GiphyPropertyEditor/img/PoweredByGiphy.png" alt="Powered by Giphy" />
+            </umb-editor-footer-content-left>
             <umb-editor-footer-content-right>
 
                 <umb-button action="close()"

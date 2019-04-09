@@ -13,6 +13,23 @@ div.giphy-picker div.results img {
 }
 
 div.giphy-picker div.results img:hover {
-    -webkit-box-shadow:0 0 2px 4px #f5c1bc;
-    box-shadow:0 0 2px 4px #f5c1bc;
+    -webkit-box-shadow: 3px 3px 5px 0 #1b264f;
+    -moz-box-shadow: 3px 3px 5px 0 #1b264f;
+    box-shadow: 3px 3px 5px 0 #1b264f;
+}
+
+div.giphy-picker div.results img.animate-show.ng-hide-add, div.giphy-picker div.results img.animate-show.ng-hide-remove {
+    -webkit-transition: opacity linear 0.5s;
+    -moz-transition: opacity linear 0.5s;
+    -o-transition: opacity linear 0.5s;
+    transition: opacity linear 0.5s;
+    display: block !important;
+}
+
+div.giphy-picker div.results img.animate-show.ng-hide-add.ng-hide-add-active, div.giphy-picker div.results img.animate-show.ng-hide-remove {
+    opacity: 0;
+}
+
+div.giphy-picker div.results img.animate-show.ng-hide-add, div.giphy-picker div.results img.animate-show.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
 }

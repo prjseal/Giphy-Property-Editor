@@ -24,7 +24,8 @@
 	,
 	javascript: [
 		'~/App_Plugins/GiphyPropertyEditor/js/giphy.propertyeditor.controller.js',
-		'~/App_Plugins/GiphyPropertyEditor/js/giphy.picker.controller.js'
+		'~/App_Plugins/GiphyPropertyEditor/js/giphy.picker.controller.js',
+		'~/App_Plugins/GiphyPropertyEditor/js/giphy.directives.js'
 	],
   css: [
     '~/App_Plugins/GiphyPropertyEditor/css/giphy.styles.css'

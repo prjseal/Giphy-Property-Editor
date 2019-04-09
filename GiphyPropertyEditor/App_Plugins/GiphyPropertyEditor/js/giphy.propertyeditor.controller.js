@@ -3,7 +3,7 @@
     $scope.add = function () {
         var giphyPicker = {
             apikey: $scope.model.config.apikey,
-            title: "Giphy Property Editor",
+            title: "Animated Gif Search",
             view: "/App_Plugins/GiphyPropertyEditor/giphy.picker.html",
             size: "small",
             submit: function (model) {

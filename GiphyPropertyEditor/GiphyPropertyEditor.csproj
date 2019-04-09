@@ -50,6 +50,8 @@
     <Content Include="App_Plugins\GiphyPropertyEditor\css\giphy.styles.css" />
     <Content Include="App_Plugins\GiphyPropertyEditor\giphy.picker.html" />
     <Content Include="App_Plugins\GiphyPropertyEditor\giphy.propertyeditor.html" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\img\PoweredByGiphy.png" />
+    <Content Include="App_Plugins\GiphyPropertyEditor\js\giphy.directives.js" />
     <Content Include="App_Plugins\GiphyPropertyEditor\js\giphy.picker.controller.js" />
     <Content Include="App_Plugins\GiphyPropertyEditor\js\giphy.propertyeditor.controller.js" />
   </ItemGroup>
