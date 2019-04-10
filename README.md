@@ -7,6 +7,13 @@ This property editor brings the giphy search to your umbraco backoffice
 
 ![preview](images/preview.gif)
 
+## Login details
+
+<strong>Username:</strong> admin@admin.com
+<strong>Password:</strong> 1234567890
+
+## Dev instructions
+
 To use it on your site, you will need to get an api key. Just go to [https://developers.giphy.com/](https://developers.giphy.com/) to register and get a key. It's quick and easy.
 
 ![preview](images/get-api-key.png)
