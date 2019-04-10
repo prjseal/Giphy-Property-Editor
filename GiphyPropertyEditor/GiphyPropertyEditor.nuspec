@@ -6,9 +6,9 @@
     <title>Giphy Property Editor</title>
     <authors>Paul Seal</authors>
     <owners>Paul Seal</owners>
-    <licenseUrl>https://github.com/prjseal/GiphyPropertyEditor/blob/master/LICENSE</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/prjseal/GiphyPropertyEditor</projectUrl>
-    <iconUrl>https://github.com/prjseal/GiphyPropertyEditor/blob/master/images/logo.jpg?raw=true</iconUrl>
+    <iconUrl>https://github.com/prjseal/Giphy-Property-Editor/blob/master/images/logo.jpg?raw=true</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A property editor for Umbraco which looks like the media picker, but lets you search for animated gifs, powered by the Giphy api.</description>
     <releaseNotes>
