@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>GiphyPropertyEdior</id>
+    <id>GiphyPropertyEditor</id>
     <version>1.0.0</version>
     <title>Giphy Property Editor</title>
     <authors>Paul Seal</authors>
