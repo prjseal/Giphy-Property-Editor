@@ -3,6 +3,6 @@ image: Visual Studio 2017
 before_build:
   ps: nuget restore GiphyPropertyEditor.sln
 build:
-  project: GiphyPropertyEditor/GiphyPropertyEditor.csproj
+  project: GiphyPropertyEditor/GiphyPropertyEditor.nuspec
   publish_nuget: true
   verbosity: detailed
