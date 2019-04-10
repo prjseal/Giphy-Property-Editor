@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("GiphyPropertyEditor")]
-[assembly: AssemblyDescription("A Giphy Property Editor for Umbraco")]
+[assembly: AssemblyDescription("A property editor for Umbraco which looks like the media picker, but lets you search for animated gifs, powered by the Giphy api.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Paul Seal from codeshare.co.uk")]
 [assembly: AssemblyProduct("Giphy Property Editor")]
