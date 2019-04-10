@@ -19,8 +19,11 @@
                        ng-trim="false" ng-model-options="{ debounce: 500 }" ng-change="search()" />
             </div>
 
-            <div class="results">
-                <img class="animate-show" fade-in ng-repeat="result in model.results" ng-src="{{result.images.fixed_height_small.url}}" data-fullurl="{{result.images.original.url}}" ng-click="submit(result)" />
+            <umb-load-indicator ng-if="model.loading">
+            </umb-load-indicator>
+
+            <div class="results" ng-if="!model.loading">
+                <img class="animate-show" fade-in ng-repeat="result in model.results" ng-src="{{result.images.fixed_height_small.url}}" ng-click="submit(result)" />
             </div>
 
         </umb-editor-container>

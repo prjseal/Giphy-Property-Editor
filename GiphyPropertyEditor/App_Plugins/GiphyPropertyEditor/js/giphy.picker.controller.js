@@ -18,6 +18,7 @@
     };
 
     $scope.search = function () {
+        $scope.model.loading = true;
         $http({
             method: 'GET',
             url: 'https://api.giphy.com/v1/gifs/search?api_key=' + $scope.model.apikey + '&q=' + $scope.model.search,
@@ -31,6 +32,7 @@
             else {
                 $scope.model.results = null;
             }
+            $scope.model.loading = false;
         });
     };
 }
