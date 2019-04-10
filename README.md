@@ -9,6 +9,8 @@ This property editor brings the giphy search to your umbraco backoffice
 
 To use it on your site, you will need to get an api key. Just go to [https://developers.giphy.com/](https://developers.giphy.com/) to register and get a key. It's quick and easy.
 
-Then when you create a data type using the Giphy Property Editor, you just enter your api key in there.
+![preview](images/get-api-key.png)
+
+Then when you create a data type in Umbraco using the Giphy Property Editor, you just enter your api key in there.
 
 ![preview](images/data-type-preview.png)
