@@ -1,6 +1,6 @@
-﻿function giphyPickerController($scope, $http, $element, $timeout) {
+﻿function giphyPickerController($scope, $http, $element) {
 
-    $timeout(function () {
+    setTimeout(function () {
         var input = $element[0].querySelector("#giphy-search");
         if (input) input.focus();
     }, 20);
