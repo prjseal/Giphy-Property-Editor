@@ -1,10 +1,23 @@
 ﻿{
+  "gridEditors": [
+    {
+      "name": "Giphy Grid Editor",
+      "alias": "GiphyGridEditor",
+      "view": "~/App_Plugins/GiphyPropertyEditor/giphy.grideditor.html",
+      "render": "~/Views/Partials/Grid/Editors/Giphy.cshtml",
+      "icon": "icon-smiley-inverted",
+      "config": {
+        "color": "url",
+        "text-align": "right"
+      }
+    }
+  ],
 	// you can define multiple editors
 	propertyEditors: [
 		{
-			alias: "GiphyPropertyEditor",
-			name: "Giphy Property Editor",
-			icon: "icon-smiley-inverted",
+			"alias": "GiphyPropertyEditor",
+			"name": "Giphy Property Editor",
+			"icon": "icon-smiley-inverted",
 			group: "media",
 			editor: {
 				view: "~/App_Plugins/GiphyPropertyEditor/giphy.propertyeditor.html",
@@ -23,6 +36,7 @@
 	]
 	,
 	javascript: [
+		'~/App_Plugins/GiphyPropertyEditor/js/giphy.grideditor.controller.js',
 		'~/App_Plugins/GiphyPropertyEditor/js/giphy.propertyeditor.controller.js',
 		'~/App_Plugins/GiphyPropertyEditor/js/giphy.picker.controller.js',
 		'~/App_Plugins/GiphyPropertyEditor/js/giphy.directives.js'

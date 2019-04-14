@@ -12,13 +12,14 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A property editor for Umbraco which looks like the media picker, but lets you search for animated gifs, powered by the Giphy api.</description>
     <releaseNotes>
-      - set focus on input
-      - added loading icon
+      - added grid editor
+      - added property value converter
     </releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>Umbraco Property Editor Media Giphy Gif Search</tags>
   </metadata>
   <files>
     <file src="App_Plugins\GiphyPropertyEditor\**\*.*" target="content\App_Plugins\GiphyPropertyEditor" />
+    <file src="Views\Partials\Grid\Editors\Giphy.cshtml" target="content\Views\Partials\Grid\Editors\Giphy.cshtml" />
   </files>
 </package>

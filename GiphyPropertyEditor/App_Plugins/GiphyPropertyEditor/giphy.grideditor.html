@@ -1,0 +1,12 @@
+﻿<div ng-controller="Giphy.GridEditor.Controller">
+    <div ng-if="control.value" class="umb-editor-placeholder" ng-click="add()">
+        <img ng-src="{{control.value}}" />
+    </div>
+
+    <div ng-if="!control.value" class="umb-editor-placeholder" ng-click="add()">
+        <i class="icon icon-smiley-inverted blue"></i>
+        <a href="#" prevent-default="">
+            Choose Gif
+        </a>
+    </div>
+</div>

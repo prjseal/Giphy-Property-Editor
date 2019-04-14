@@ -16,3 +16,5 @@
 /GiphyPropertyEditor/bin/Debug
 /GiphyPropertyEditor.Web/App_Plugins/GiphyPropertyEditor
 /GiphyPropertyEditor/GiphyPropertyEditor.csproj.user
+/GiphyPropertyEditor.Web/Views/Partials/Grid/Editors/Giphy.cshtml
+/GiphyPropertyEditor.Web/*.user
