@@ -3,6 +3,10 @@ A Giphy Property Editor for Umbraco by Paul Seal from [https://codeshare.co.uk](
 
 ![giphy unicorn](https://media3.giphy.com/media/mKP05pCT7U3Sg/100.gif)
 
+[![Build status](https://ci.appveyor.com/api/projects/status/79hnj9h71q8km9bp?svg=true)](https://ci.appveyor.com/project/prjseal/giphy-property-editor)
+
+[![Nuget Downloads](https://img.shields.io/nuget/dt/GiphyPropertyEditor.svg)](https://www.nuget.org/packages/GiphyPropertyEditor)
+
 This property editor brings the giphy search to your umbraco backoffice
 
 ![preview](images/preview.gif)
