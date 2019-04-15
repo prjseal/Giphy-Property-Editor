@@ -2,7 +2,9 @@
 
     $scope.add = function () {
         var giphyPicker = {
-            apikey: $scope.model.config.apikey,
+            apikey: Umbraco.Sys.ServerVariables["Giphy"]["ApiKey"]
+                ? Umbraco.Sys.ServerVariables["Giphy"]["ApiKey"]
+                : $scope.model.config.apikey,
             title: "Animated Gif Search",
             view: "/App_Plugins/GiphyPropertyEditor/giphy.picker.html",
             size: "small",
