@@ -28,4 +28,6 @@ Then when you create a data type in Umbraco using the Giphy Property Editor, you
 <add key="giphyApiKey" value="your-giphy-api-key-here" />
 ```
 
+If you add that to the app settings then it will work for both the property editor and grid editor. But if you don't then you will need to add the api key when creating the data type using the property editor.
+
 ![preview](images/data-type-preview.png)
