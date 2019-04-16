@@ -22,6 +22,10 @@ To use it on your site, you will need to get an api key. Just go to [https://dev
 
 ![preview](images/get-api-key.png)
 
-Then when you create a data type in Umbraco using the Giphy Property Editor, you just enter your api key in there.
+Then when you create a data type in Umbraco using the Giphy Property Editor, you just enter your api key in there or you can put it in the app settings like this:
+
+```
+<add key="giphyApiKey" value="your-giphy-api-key-here" />
+```
 
 ![preview](images/data-type-preview.png)
