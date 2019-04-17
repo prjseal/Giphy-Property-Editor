@@ -20,7 +20,7 @@ namespace GiphyPropertyEditor.Compose
         {
             var giphyApiKey = ConfigurationManager.AppSettings["giphyApiKey"];
             
-            if (!e.ContainsKey("MediaInfo"))
+            if (!e.ContainsKey("Giphy"))
                 e.Add("Giphy", new Dictionary<string, object>
                 {
                     {
