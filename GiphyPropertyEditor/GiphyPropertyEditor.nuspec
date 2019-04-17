@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>GiphyPropertyEditor</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <title>Giphy Property Editor</title>
     <authors>Paul Seal</authors>
     <owners>Paul Seal</owners>
@@ -12,6 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A property editor for Umbraco which looks like the media picker, but lets you search for animated gifs, powered by the Giphy api.</description>
     <releaseNotes>
+      - fixed incorrect key when checking server variables
       - removed dependencies
       - put giphy api key in app settings using the key name giphyApiKey
       - added grid editor
