@@ -1,0 +1,25 @@
+﻿<div ng-controller="Giphy.PropertyEditor.Controller" class="giphyPropertyEditor umb-property-editor umb-mediapicker umb-mediapicker-single">
+
+    <div data-element="sortable-thumbnails" class="flex flex-wrap error" ng-if="model.value">
+        <ul class="umb-sortable-thumbnails">
+            <li class="umb-sortable-thumbnails__wrapper" ng-click="add()">
+                <img ng-src="{{model.value}}" alt="">
+                <div class="umb-sortable-thumbnails__actions">
+                    <a class="umb-sortable-thumbnails__action -red" href="" ng-click="remove()">
+                        <i class="icon icon-delete"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div data-element="sortable-thumbnails" class="flex flex-wrap error" ng-hide="model.value">
+        <ul ui-sortable="sortableOptions" class="umb-sortable-thumbnails ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty">
+            <li style="border: none;" class="add-wrapper unsortable ng-scope">
+                <a href="#" class="add-link add-link-square" ng-click="add()" prevent-default>
+                    <i class="icon icon-add large"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
