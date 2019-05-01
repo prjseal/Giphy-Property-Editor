@@ -1,22 +1,22 @@
-﻿function giphyPropertyEditorController($scope, editorService) {
+﻿function giphyPropertyEditorController($scope, dialogService) {
 
     $scope.add = function () {
-        var giphyPicker = {
+        $scope.giphyPicker = {
             apikey: Umbraco.Sys.ServerVariables["Giphy"]["ApiKey"]
                 ? Umbraco.Sys.ServerVariables["Giphy"]["ApiKey"]
                 : $scope.model.config.apikey,
             title: "Animated Gif Search",
-            view: "/App_Plugins/GiphyPropertyEditor/giphy.picker.html",
-            size: "small",
+            view: "/App_Plugins/GiphyPropertyEditorUmbraco7/giphy.picker.html",
+            show: true,
             submit: function (model) {
                 $scope.model.value = model.images.original.url;
-                editorService.close();
+                $scope.giphyPicker.show = false;
             },
             close: function () {
-                editorService.close();
+                $scope.giphyPicker.show = false;
+                $scope.giphyPicker = null;
             }
         };
-        editorService.open(giphyPicker);
     };
 
     $scope.remove = function () {

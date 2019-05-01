@@ -4,7 +4,7 @@
         var giphyPicker = {
             apikey: Umbraco.Sys.ServerVariables["Giphy"]["ApiKey"],
             title: "Animated Gif Search",
-            view: "/App_Plugins/GiphyPropertyEditor/giphy.picker.html",
+            view: "/App_Plugins/GiphyPropertyEditorUmbraco7/giphy.picker.html",
             size: "small",
             submit: function (model) {
                 $scope.control.value = model.images.original.url;

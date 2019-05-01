@@ -3,7 +3,7 @@
     {
       "name": "Animated Gif",
       "alias": "GiphyGridEditor",
-      "view": "~/App_Plugins/GiphyPropertyEditor/giphy.grideditor.html",
+      "view": "~/App_Plugins/GiphyPropertyEditorUmbraco7/giphy.grideditor.html",
       "render": "~/Views/Partials/Grid/Editors/Giphy.cshtml",
       "icon": "icon-smiley-inverted"
     }
@@ -16,7 +16,7 @@
 			"icon": "icon-smiley-inverted",
 			group: "media",
 			editor: {
-				view: "~/App_Plugins/GiphyPropertyEditor/giphy.propertyeditor.html",
+				view: "~/App_Plugins/GiphyPropertyEditorUmbraco7/giphy.propertyeditor.html",
 				valueType: "string"
 			},
 			"prevalues": {
@@ -32,12 +32,12 @@
 	]
 	,
 	javascript: [
-		'~/App_Plugins/GiphyPropertyEditor/js/giphy.grideditor.controller.js',
-		'~/App_Plugins/GiphyPropertyEditor/js/giphy.propertyeditor.controller.js',
-		'~/App_Plugins/GiphyPropertyEditor/js/giphy.picker.controller.js',
-		'~/App_Plugins/GiphyPropertyEditor/js/giphy.directives.js'
+		'~/App_Plugins/GiphyPropertyEditorUmbraco7/js/giphy.grideditor.controller.js',
+		'~/App_Plugins/GiphyPropertyEditorUmbraco7/js/giphy.propertyeditor.controller.js',
+		'~/App_Plugins/GiphyPropertyEditorUmbraco7/js/giphy.picker.controller.js',
+		'~/App_Plugins/GiphyPropertyEditorUmbraco7/js/giphy.directives.js'
 	],
   css: [
-    '~/App_Plugins/GiphyPropertyEditor/css/giphy.styles.css'
+    '~/App_Plugins/GiphyPropertyEditorUmbraco7/css/giphy.styles.css'
   ]
 }
