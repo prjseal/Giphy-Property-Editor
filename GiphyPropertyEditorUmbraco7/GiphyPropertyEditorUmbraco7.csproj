@@ -217,7 +217,10 @@
   <ItemGroup>
     <None Include="app.config" />
     <Content Include="App_Plugins\GiphyPropertyEditorUmbraco7\package.manifest" />
-    <None Include="packages.config" />
+    <None Include="GiphyPropertyEditorUmbraco7.nuspec" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Views\Partials\Grid\Editors\Giphy.cshtml" />
   </ItemGroup>
   <ItemGroup>

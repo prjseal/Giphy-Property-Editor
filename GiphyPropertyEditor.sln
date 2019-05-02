@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiphyPropertyEditor.Web", "GiphyPropertyEditor.Web\GiphyPropertyEditor.Web.csproj", "{E88A97DA-6FCE-45D5-A6EE-12368A84C351}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiphyPropertyEditor", "GiphyPropertyEditor\GiphyPropertyEditor.csproj", "{4D856B3B-19FF-45E5-B795-D164CA019ECA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiphyPropertyEditorUmbraco7.Web", "GiphyPropertyEditorUmbraco7.Web\GiphyPropertyEditorUmbraco7.Web.csproj", "{B35B43AF-8B99-474B-AB85-767E97F78788}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiphyPropertyEditorUmbraco7", "GiphyPropertyEditorUmbraco7\GiphyPropertyEditorUmbraco7.csproj", "{B44B15DE-99D2-481F-B7D7-38D60746E076}"
@@ -17,14 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E88A97DA-6FCE-45D5-A6EE-12368A84C351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E88A97DA-6FCE-45D5-A6EE-12368A84C351}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E88A97DA-6FCE-45D5-A6EE-12368A84C351}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E88A97DA-6FCE-45D5-A6EE-12368A84C351}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D856B3B-19FF-45E5-B795-D164CA019ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D856B3B-19FF-45E5-B795-D164CA019ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D856B3B-19FF-45E5-B795-D164CA019ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D856B3B-19FF-45E5-B795-D164CA019ECA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B35B43AF-8B99-474B-AB85-767E97F78788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B35B43AF-8B99-474B-AB85-767E97F78788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B35B43AF-8B99-474B-AB85-767E97F78788}.Release|Any CPU.ActiveCfg = Release|Any CPU
