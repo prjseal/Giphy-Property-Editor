@@ -16,8 +16,10 @@
                 </div>
             </section>
 
-            <section class="section section">
-            @Html.GetGridHtml(Model.Content, "bodyText", "bootstrap3-fluid")
+<section class="section section">    
+    
+    <p><img src="@Model.Content.GiphyImage" /></p>
+    @Html.GetGridHtml(Model.Content, "bodyText", "bootstrap3-fluid")
             </section>
             
 

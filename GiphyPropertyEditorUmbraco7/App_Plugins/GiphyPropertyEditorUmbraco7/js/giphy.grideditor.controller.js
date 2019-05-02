@@ -1,4 +1,4 @@
-﻿function giphyGridEditorController($scope, editorService) {
+﻿function giphyGridEditorController($scope) {
 
     $scope.overlay = {
         apikey: Umbraco.Sys.ServerVariables["Giphy"]["ApiKey"]
@@ -16,6 +16,10 @@
         close: function () {
             $scope.overlay.show = false;
         }
+    };
+
+    $scope.add = function () {
+        $scope.overlay.show = true;
     };
 
     $scope.remove = function () {
