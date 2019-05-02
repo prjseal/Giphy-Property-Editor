@@ -1,9 +1,9 @@
 ﻿<div ng-controller="Giphy.PropertyEditor.Controller" class="giphyPropertyEditor umb-property-editor umb-mediapicker umb-mediapicker-single">
 
     <div data-element="sortable-thumbnails" class="flex flex-wrap error" ng-if="model.value">
-        <ul class="umb-sortable-thumbnails">
-            <li class="umb-sortable-thumbnails__wrapper" ng-click="add()">
-                <img ng-src="{{model.value}}" alt="">
+        <ul ui-sortable="sortableOptions" class="umb-sortable-thumbnails ng-pristine ng-valid ui-sortable">
+            <li style="width: 120px; height: 100px; overflow: hidden;" class="ng-scope ui-sortable-handle" ng-click="add()">
+                <img ng-src="{{model.value}}">
                 <div class="umb-sortable-thumbnails__actions">
                     <a class="umb-sortable-thumbnails__action -red" href="" ng-click="remove()">
                         <i class="icon icon-delete"></i>
@@ -22,4 +22,11 @@
             </li>
         </ul>
     </div>
+    
+    <umb-overlay
+        ng-if="overlay.show"
+        model="overlay"
+        view="overlay.view"
+        position="right">
+    </umb-overlay>
 </div>
