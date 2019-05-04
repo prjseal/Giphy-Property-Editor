@@ -7,9 +7,16 @@ A Giphy Property Editor for Umbraco by Paul Seal from [https://codeshare.co.uk](
 
 [![Nuget Downloads](https://img.shields.io/nuget/dt/GiphyPropertyEditor.svg)](https://www.nuget.org/packages/GiphyPropertyEditor)
 
-This property editor brings the giphy search to your umbraco backoffice
+
+## Property Editor
+Use the property editor to let you search giphy for an image and use it like the media picker.
 
 ![preview](images/preview.gif)
+
+## Grid Editor
+Use the grid editor to let you search giphy for an image and use it in the grid.
+
+![preview](images/giphy-grid.gif)
 
 ## Login details
 
