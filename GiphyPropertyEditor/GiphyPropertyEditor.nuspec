@@ -24,5 +24,6 @@
   <files>
     <file src="App_Plugins\GiphyPropertyEditor\**\*.*" target="content\App_Plugins\GiphyPropertyEditor" />
     <file src="Views\Partials\Grid\Editors\Giphy.cshtml" target="content\Views\Partials\Grid\Editors\Giphy.cshtml" />
+	<file src="readme.txt" target="" />
   </files>
 </package>
