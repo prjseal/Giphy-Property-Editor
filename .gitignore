@@ -18,3 +18,4 @@
 /GiphyPropertyEditor/GiphyPropertyEditor.csproj.user
 /GiphyPropertyEditor.Web/Views/Partials/Grid/Editors/Giphy.cshtml
 /GiphyPropertyEditor.Web/*.user
+/*.nupkg
